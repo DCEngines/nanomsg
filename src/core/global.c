@@ -47,6 +47,7 @@
 #include "../transports/inproc/inproc.h"
 #include "../transports/ipc/ipc.h"
 #include "../transports/tcp/tcp.h"
+#include "../transports/rdma/tcp.h"
 #include "../transports/ws/ws.h"
 #include "../transports/tcpmux/tcpmux.h"
 
@@ -255,6 +256,7 @@ static void nn_global_init (void)
     nn_global_add_transport (nn_inproc);
     nn_global_add_transport (nn_ipc);
     nn_global_add_transport (nn_tcp);
+    nn_global_add_transport (nn_rdma);
     nn_global_add_transport (nn_ws);
     nn_global_add_transport (nn_tcpmux);
 

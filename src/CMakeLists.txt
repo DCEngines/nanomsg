@@ -30,6 +30,7 @@ set (NN_SOURCES
     inproc.h
     ipc.h
     tcp.h
+    rdma.h
     ws.h
     pair.h
     pubsub.h
@@ -255,6 +256,17 @@ set (NN_SOURCES
     transports/tcp/stcp.c
     transports/tcp/tcp.h
     transports/tcp/tcp.c
+
+    transports/rdma/atcp.h
+    transports/rdma/atcp.c
+    transports/rdma/btcp.h
+    transports/rdma/btcp.c
+    transports/rdma/ctcp.h
+    transports/rdma/ctcp.c
+    transports/rdma/stcp.h
+    transports/rdma/stcp.c
+    transports/rdma/tcp.h
+    transports/rdma/tcp.c
 
     transports/tcpmux/atcpmux.h
     transports/tcpmux/atcpmux.c

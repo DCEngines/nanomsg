@@ -290,6 +290,18 @@ TRANSPORTS_TCP = \
     src/transports/tcp/tcp.h \
     src/transports/tcp/tcp.c
 
+TRANSPORTS_RDMA = \
+    src/transports/rdma/atcp.h \
+    src/transports/rdma/atcp.c \
+    src/transports/rdma/btcp.h \
+    src/transports/rdma/btcp.c \
+    src/transports/rdma/ctcp.h \
+    src/transports/rdma/ctcp.c \
+    src/transports/rdma/stcp.h \
+    src/transports/rdma/stcp.c \
+    src/transports/rdma/tcp.h \
+    src/transports/rdma/tcp.c
+
 TRANSPORTS_WS = \
     src/transports/ws/aws.h \
     src/transports/ws/aws.c \
@@ -323,6 +335,7 @@ NANOMSG_TRANSPORTS = \
     $(TRANSPORTS_INPROC) \
     $(TRANSPORTS_IPC) \
     $(TRANSPORTS_TCP) \
+    $(TRANSPORTS_RDMA) \
     $(TRANSPORTS_WS) \
     $(TRANSPORTS_TCPMUX)
 
@@ -473,6 +486,7 @@ TRANSPORT_TESTS = \
     tests/ipc_stress \
     tests/tcp \
     tests/tcp_shutdown \
+    tests/rdma \
     tests/ws \
     tests/tcpmux
 
